@@ -1,0 +1,134 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: "Montserrat", sans-serif;
+}
+body {
+  padding: 0 16px;
+  background-image: url("https://img.freepik.com/premium-vector/hand-drawn-scribble-seamless-pattern-background_405287-409.jpg?w=1060");
+}
+
+header {
+  background-color: #6b08b6;
+  background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
+  text-align: center;
+  width: 300px;
+  border-radius: 0px 0px 200px 0px;
+  margin: auto -16px;
+  padding: 16px 32px;
+  box-shadow: 10px 25px 10px rgba(0, 0, 0, 0.3);
+  transition: border-radius 0.3s ease;
+  border: 2px solid #ffffff;
+}
+
+header h1 {
+  color: #fff;
+  font-family: "McLaren", cursive;
+  font-weight: 200;
+}
+
+footer {
+  position: absolute;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
+}
+
+footer p {
+  color: #ccc;
+}
+.note {
+  background-color: rgb(255, 255, 255);
+  transform: skew(-2deg);
+  border-radius: 7px;
+  box-shadow: -5px 5px 2px #a2a1a1;
+  padding: 10px;
+  width: 240px;
+  margin: 16px;
+  float: left;
+  position: relative; /* Required for pseudo-elements */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Smooth scaling effect on hover */
+.note:hover {
+  transform: translateY(-5px);
+  box-shadow: -10px 10px 5px #606060;
+}
+
+.note h1 {
+  line-height: 2;
+  background-color: #6b08b6;
+  background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
+  text-align: center;
+  border-radius: 20px 20px 30px 30px;
+  color: rgb(255, 255, 255);
+  font-size: 1.1em;
+  margin-bottom: 6px;
+}
+
+.note p {
+  line-height: 2;
+  font-size: 1.1em;
+  margin-bottom: 10px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.note button {
+  position: relative;
+  float: right;
+  margin-right: 10px;
+  color: #777079;
+  border: none;
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+  outline: none;
+}
+
+form {
+  position: relative;
+  width: 480px;
+  margin: 30px auto 20px auto;
+  background: #fff;
+  padding: 15px;
+  border-radius: 7px;
+  box-shadow: -2px 2px 5px rgb(232, 232, 227);
+  border: 3px solid rgb(131, 130, 131);
+}
+
+form input,
+form textarea {
+  width: 100%;
+  border: none;
+  padding: 4px;
+  outline: none;
+  font-size: 1.2em;
+  font-family: inherit;
+  resize: none;
+}
+form button {
+  position: absolute;
+  right: 18px;
+  bottom: -18px;
+  background: #47424b;
+  background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
+  color: #fff;
+  border: 2px white solid;
+  border-radius: 50%;
+  width: 100px;
+  height: 35px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  outline: none;
+}
+button:active {
+  transform: scale(0.95); /* Slightly shrink the button */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Reduce shadow depth */
+  background-color: #523c00; /* Darker yellow */
+}
